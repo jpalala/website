@@ -1,23 +1,23 @@
 <?php
- $dir= __DIR__ . "/../";
+  $dir= __DIR__ . "/../";
 ?>
 <!doctype html>
 <html>
-    <head>
+<head>
 <?php
- var_dump( $dir );
-  require($dir . 'views/partials/head.phtml');
+  require $dir . 'views/partials/head.phtml';
 ?>
-
-    </head>
-    <body>
-<?php
-  require($dir . 'views/partials/header.phtml');
-?>
-  <main>
-<?php
-  require('../app/router.php');
-?>
-  </main>
-  </body>
+</head>
+<body>
+  <div class="container">
+  <?php
+    require $dir . 'views/partials/header.phtml';
+  ?>
+    <main>
+    <?php
+      require('../app/router.php');
+    ?>
+    </main>
+  </div>
+</body>
 </html>
